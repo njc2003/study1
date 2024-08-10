@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<title>오토다이렉트카</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script language="JavaScript" type="text/javascript" src="js/jquery-1.7.2.min.js"></script>	
+	<script src="js/menu.js" type="text/javascript"></script>
+	<script language="JavaScript" type="text/javascript" src="./js/jquery.cfSlider.js"></script>
+</head>
+
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" onload="">
+
+
+
+<div id="hd">
+	<div id="hd_top_wrapper">
+		<div id="hd_top">
+			<ul>
+				<li><a id="top_on" href="#" >장기렌터카</a></li>
+				<li><a href="#">할부&리스</a></li>
+			</ul>
+		</div>
+		<div id="hd_content">
+			<img src="img/logo.png" style="padding:26px 0 0 0;float:left">
+			<img src="img/top_banner.png" style="padding:10px 0 0 0;float:right">
+		</div>
+		<div id="hd_nav">
+			 <nav id="gnb">  
+				<ul id="gnb_1dul">					
+					<li class="gnb_1dli" >
+						<a href="#" class="gnb_1da" target="" style="width:108px;">장기렌터카</a>						  
+					</li>
+
+					<li class="gnb_1dli" >
+						<a href="#" class="gnb_1da" target="" style="width:146px;">장기렌터카VS리스</a>						  
+					</li>
+
+					<li class="gnb_1dli" >
+						<a href="#" class="gnb_1da" target="" style="width:121px;">브랜드스토리</a>						  
+					</li>
+
+					<li class="gnb_1dli">
+						<a href="#" class="gnb_1da" target="" style="width:132px;">표준차량단가표</a>						  
+					</li>
+
+					<li class="gnb_1dli">
+						<a href="#" class="gnb_1da_nh"  style="color:red;width:140px;"><img src="img/icon1.png"> 이번달e가격</a>						  
+					</li>
+
+					<li class="gnb_1dli">
+						<a href="#" class="gnb_1da_nh" target="" style="width:136px;"><img src="img/icon2.png"> 게릴라특가</a>						  
+					</li>
+
+					<li class="gnb_1dli">
+						<a href="#" class="gnb_1da" target="" style="width:94px;">커뮤니티</a>						  
+					</li>
+
+					<li class="gnb_1dli">
+						<a href="#" class="gnb_1da_nh" target="" style="color:white;width:98px;"><img src="img/icon4.png"> 견적문의</a>						  
+					</li>
+				</ul>
+				<div class="top_menu">							
+					<ul style="width:110px">
+						<li><a href="#">장기렌터카란?</a></li>
+						<li><a href="#">이용절차</a></li>
+						<li><a href="#">장기렌터카 장점</a></li>									
+					</ul>
+					<ul style="width:147px">
+						<li><a href="#">장기렌터카 Tip</a></li>
+						<li><a href="#">장기렌터카 문의하기</a></li>		
+					</ul>
+					<ul style="width:121px">
+						<li><a href="#">KT금호렌터카</a></li>
+						<li style="width:121px"><a href="#">레드캡</a></li>
+						<li style="width:121px"><a href="#">AJ</a></li>					
+					</ul>
+					<ul style="width:135px">
+						<li style="width:135px"><a href="#">국산차</a></li>
+						<li><a href="#">수입차</a></li>				
+					</ul>
+					<ul style="width:141px">
+						<li style="width:141px"><a href="#">이번달 특가</a></li>
+						<li style="width:141px"><a href="#">홈쇼핑 특가</a></li>										
+					</ul>
+					<ul style="width:120px">
+						<li><a href="#">한정 특가상품</a></li>				
+					</ul>
+					<ul style="width:95px">
+						<li style="width:95px"><a href="#">공지사항</a></li>
+						<li style="width:95px"><a href="#">FAQ</a></li>
+						<li style="width:95px"><a href="#">차량 이용후기</a></li>
+						<li style="width:95px"><a href="#">블랙박스 영상</a></li>					
+					</ul>
+					<ul style="width:80px">
+						<li><a href="#" style="letter-spacing:-0.1em">문의요(신차구매)</a></li>
+						<li><a href="#">찾아요(승계)</a></li>
+						<li><a href="#">팔아요(중고)</a></li>
+						<li><a href="#">자동차보험</a></li>		
+						<li><a href="#">딜러문의</a></li>		
+					</ul>
+					<div id="top_menu_arrow"><img src="img/top_menu_arrow.png"></div>
+				</div>
+
+			</nav>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="wrapper">
+	<div id="wrapper_sub">
+
+		<div id="sub_side_wrap">
+			<div id="sub_side">
+				게릴라특가
+			</div>
+			<div id="sub_side_menu">
+				<ul>
+					<li><a href="#" id="sub_side_menu_on">한정수량특가</a></li>	
+					<li><a href="#">빠른 출고 이벤트</a></li>	
+					
+				
+				</ul>
+			</div>
+		</div>		
+		
+		<div class="sub_content_wrap">
+			<ul id="sub_title">
+				<li class="sub_title_text"><img id="sub_title_text_bar" src="img/sub_title_bar.png">한정수량특가</li>
+				<li class="sub_nav"><span><img src="img/arrow_home.png"></span> <span>오토다이렉트카</span> > <span>게릴라특가</span> > <span class="nav_bold">한정수량특가</span></li>
+			</ul>
+			
+			<div class="sub8_event">				
+				<ul>	
+				
+					<li>
+						<div id="event_icon"><img src="img/event_corner.png"></div>
+						<div id="event_box_list">
+							<div class="event_box">
+								<ul>
+									<li class="event_box_li" style="width:171px">
+										<ul>
+											<li class="align_center"><img src="img/hyundae_icon.png"></li>
+											<li><span class="sub1_expl_title">소나타</br>하이브리드</span> </li>
+											<li>소나타 hybrid 본질에 혁신을 </br>더하다.</li>
+											
+											<li class="align_center"><font style="color:#a49898;font-size:14px;text-decoration:line-through;">0,000,000원</font><img style="margin-top:9px" src="img/line_through_icon.png"></li>
+											<li class="align_center" style="border:0;padding:0 0 5px 0 "><span class="sub8_expl_saleprice">월:<font style="color:red">0,000,000</font><font style="font-size:13px">원</font></span></li>
+											<li class="align_center" style="border:0"><input class="border_no" type="image" src="img/btn_request_middle.png"></input></li>
+										</ul>
+									</li>
+									<li class="event_box_img">
+										<img src="img/sample4.jpg">
+									</li>
+								</ul>						
+							</div>
+							<div class="event_box">
+								<ul>
+									<li class="event_box_li" style="width:171px">
+										<ul>
+											<li class="align_center"><img src="img/hyundae_icon.png"></li>
+											<li><span class="sub1_expl_title">소나타</br>하이브리드</span> </li>
+											<li>소나타 hybrid 본질에 혁신을 </br>더하다.</li>
+											
+											<li class="align_center"><font style="color:#a49898;font-size:14px;text-decoration:line-through;">0,000,000원</font><img style="margin-top:9px" src="img/line_through_icon.png"></li>
+											<li class="align_center" style="border:0;padding:0 0 5px 0 "><span class="sub8_expl_saleprice">월:<font style="color:red">1,000,000</font><font style="font-size:13px">원</font></span></li>
+											<li class="align_center" style="border:0"><input class="border_no" type="image" src="img/btn_request_middle.png"></input></li>
+										</ul>
+									</li>
+									<li class="event_box_img">
+										<img src="img/sample4.jpg">
+									</li>
+								</ul>						
+							</div>
+							<div class="event_box">
+								<ul>
+									<li class="event_box_li" style="width:171px">
+										<ul>
+											<li class="align_center"><img src="img/hyundae_icon.png"></li>
+											<li><span class="sub1_expl_title">소나타</br>하이브리드</span> </li>
+											<li>소나타 hybrid 본질에 혁신을 </br>더하다.</li>
+											
+											<li class="align_center"><font style="color:#a49898;font-size:14px;text-decoration:line-through;">0,000,000원</font><img style="margin-top:9px" src="img/line_through_icon.png"></li>
+											<li class="align_center" style="border:0;padding:0 0 5px 0 "><span class="sub8_expl_saleprice">월:<font style="color:red">2,000,000</font><font style="font-size:13px">원</font></span></li>
+											<li class="align_center" style="border:0"><input class="border_no" type="image" src="img/btn_request_middle.png"></input></li>
+										</ul>
+									</li>
+									<li class="event_box_img">
+										<img src="img/sample4.jpg">
+									</li>
+								</ul>						
+							</div>
+						</div>
+					</li>
+
+					<li class="sub8_event_rightbox" style="width:166px;height:281px;padding:0;text-align:right;border-left:0">
+						<ul id="event_box_btn">
+							<li info="1"><img src="img/event_side_bar.png"><img src="img/event_thum1_over.jpg"></li>
+							<li info="2"><img src="img/event_thum2.jpg"></li>
+							<li info="3"><img src="img/event_thum3.jpg"></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+
+			<div class="sub1_top_title">
+				<img src="img/icon_check.png"> 월렌탈료 ( VTA포함 / 48개월 / 보증금0% 공통 )
+			</div>
+
+			<div class="sub1_list">
+				
+				<ul>
+
+					<li>
+						<div class="sub1_list_pic">
+							<img src="img/sample1.jpg">
+							<div class="sub1_list_pic_icon">
+								<img src="img/icon_best.png"> <img src="img/icon_new.png"> <img src="img/icon_sale.png">
+							</div>
+						</div>
+						<div class="sub1_list_expl">
+							<ul>
+								<li><img src="img/hyundae_icon.png"> <span class="sub1_expl_title">소나타 하이브리드</span> </li>
+								<li>| 남은수량 | <img src="img/icon_cart.png"> <span class="price_bold"><font style="color:red">35</font>대<font style="color:#6c6c6d">(판매수량 :15대)</font></span> <img src="img/icon_end.png"></li>
+								<li>| 내용 | 
+									<textarea row="5" col="25">프리미엄 Full 정비서비스 포함. 사은품A ( 파인드라이브 네비게이션 + 파이드라이브 블랙박스 + 썬팅 + GS칼텍스 주유할인카드 ) 사은품B ( 레노버요가 태블릿PC + 다본다 블랙박스 + 썬팅 + GS칼텍스 주유할인카드 )</textarea>
+								</li>
+								<li style="padding:10px 0 0 0"><img src="img/icon_month.png"> <font style="color:#a49898;font-size:14px;text-decoration:line-through;">0,000,000원</font><img style="margin-top:9px" src="img/line_through_icon.png"></li>
+								<li style="border-top:0;padding:0"><img src="img/icon_saleprice.png" > <span class="sub1_expl_saleprice"><font style="color:red">0,000,000</font><font style="color:#574c4c;font-size:13px">원</font></span></li>
+								<li class="align_right"><input class="border_no" type="image" src="img/btn_request.png"></input></li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<div class="sub1_list_pic">
+							<img src="img/sample1.jpg">
+							<div class="sub1_list_pic_icon">
+								<img src="img/icon_best.png"> <img src="img/icon_new.png"> <img src="img/icon_sale.png">
+							</div>
+						</div>
+						<div class="sub1_list_expl">
+							<ul>
+								<li><img src="img/hyundae_icon.png"> <span class="sub1_expl_title">소나타 하이브리드</span> </li>
+								<li>| 남은수량 | <img src="img/icon_cart.png"> <span class="price_bold"><font style="color:red">35</font>대<font style="color:#6c6c6d">(판매수량 :15대)</font></span> <img src="img/icon_end.png"></li>
+								<li>| 내용 | 
+									<textarea row="5" col="25">프리미엄 Full 정비서비스 포함. 사은품A ( 파인드라이브 네비게이션 + 파이드라이브 블랙박스 + 썬팅 + GS칼텍스 주유할인카드 ) 사은품B ( 레노버요가 태블릿PC + 다본다 블랙박스 + 썬팅 + GS칼텍스 주유할인카드 )</textarea>
+								</li>
+								<li style="padding:10px 0 0 0"><img src="img/icon_month.png"> <font style="color:#a49898;font-size:14px;text-decoration:line-through;">0,000,000원</font><img style="margin-top:9px" src="img/line_through_icon.png"></li>
+								<li style="border-top:0;padding:0"><img src="img/icon_saleprice.png" > <span class="sub1_expl_saleprice"><font style="color:red">0,000,000</font><font style="color:#574c4c;font-size:13px">원</font></span></li>
+								<li class="align_right"><input class="border_no" type="image" src="img/btn_request.png"></input></li>
+							</ul>
+						</div>
+						<div class="sold_out">
+							<img src="img/soldout.png">
+						</div>
+					</li>
+
+					
+					<li>
+						<div class="sub1_list_pic">
+							<img src="img/sample1.jpg">
+							<div class="sub1_list_pic_icon">
+								<img src="img/icon_best.png"> <img src="img/icon_new.png"> <img src="img/icon_sale.png">
+							</div>
+						</div>
+						<div class="sub1_list_expl">
+							<ul>
+								<li><img src="img/hyundae_icon.png"> <span class="sub1_expl_title">소나타 하이브리드</span> </li>
+								<li>| 남은수량 | <img src="img/icon_cart.png"> <span class="price_bold"><font style="color:red">35</font>대<font style="color:#6c6c6d">(판매수량 :15대)</font></span> <img src="img/icon_end.png"></li>
+								<li>| 내용 | 
+									<textarea row="5" col="25">프리미엄 Full 정비서비스 포함. 사은품A ( 파인드라이브 네비게이션 + 파이드라이브 블랙박스 + 썬팅 + GS칼텍스 주유할인카드 ) 사은품B ( 레노버요가 태블릿PC + 다본다 블랙박스 + 썬팅 + GS칼텍스 주유할인카드 )</textarea>
+								</li>
+								<li style="padding:10px 0 0 0"><img src="img/icon_month.png"> <font style="color:#a49898;font-size:14px;text-decoration:line-through;">0,000,000원</font><img style="margin-top:9px" src="img/line_through_icon.png"></li>
+								<li style="border-top:0;padding:0"><img src="img/icon_saleprice.png" > <span class="sub1_expl_saleprice"><font style="color:red">0,000,000</font><font style="color:#574c4c;font-size:13px">원</font></span></li>
+								<li class="align_right"><input class="border_no" type="image" src="img/btn_request.png"></input></li>
+							</ul>
+						</div>
+					</li>
+
+					<li>
+						<div class="sub1_list_pic">
+							<img src="img/sample1.jpg">
+							<div class="sub1_list_pic_icon">
+								<img src="img/icon_best.png"> <img src="img/icon_new.png"> <img src="img/icon_sale.png">
+							</div>
+						</div>
+						<div class="sub1_list_expl">
+							<ul>
+								<li><img src="img/hyundae_icon.png"> <span class="sub1_expl_title">소나타 하이브리드</span> </li>
+								<li>| 남은수량 | <img src="img/icon_cart.png"> <span class="price_bold"><font style="color:red">35</font>대<font style="color:#6c6c6d">(판매수량 :15대)</font></span> <img src="img/icon_end.png"></li>
+								<li>| 내용 | 
+									<textarea row="5" col="25">프리미엄 Full 정비서비스 포함. 사은품A ( 파인드라이브 네비게이션 + 파이드라이브 블랙박스 + 썬팅 + GS칼텍스 주유할인카드 ) 사은품B ( 레노버요가 태블릿PC + 다본다 블랙박스 + 썬팅 + GS칼텍스 주유할인카드 )</textarea>
+								</li>
+								<li style="padding:10px 0 0 0"><img src="img/icon_month.png"> <font style="color:#a49898;font-size:14px;text-decoration:line-through;">0,000,000원</font><img style="margin-top:9px" src="img/line_through_icon.png"></li>
+								<li style="border-top:0;padding:0"><img src="img/icon_saleprice.png" > <span class="sub1_expl_saleprice"><font style="color:red">0,000,000</font><font style="color:#574c4c;font-size:13px">원</font></span></li>
+								<li class="align_right"><input class="border_no" type="image" src="img/btn_request.png"></input></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+
+			<nav class="pg_wrap">
+				<span class="pg">
+					<a class="pg_page" href="#"><<</a>
+					<strong class="pg_current">1</strong>
+					<a class="pg_page" href="#">2</a>
+					<a class="pg_page" href="#">3</a>
+					<a class="pg_page" href="#">4</a>
+					<a class="pg_page" href="#">5</a>
+					<a class="pg_page" href="#">6</a>
+					<a class="pg_page" href="#">7</a>
+					<a class="pg_page" href="#">8</a>
+					<a class="pg_page" href="#">9</a>
+					<a class="pg_page" href="#">10</a>
+					<a class="pg_page" href="#">>></a>
+				</span>
+			</nav>
+
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+var timer = null;
+var nidx = 1;
+var total_event = 3;
+var timerSec = 3000;
+
+function event_banner_auto(){
+	var nextNum = parseInt(nidx)+1;
+
+	if(nextNum > total_event) nextNum = 1;
+
+	clearTimeout(timer);
+	event_banner_move(nextNum);
+
+	timer = setTimeout("event_banner_auto()",timerSec);
+}
+
+function event_banner_move(idx){
+
+	if(idx!=nidx){
+
+		var img_target = $("#event_box_btn li").eq(nidx-1);
+		var img_target2 = $("#event_box_btn li").eq(idx-1);
+
+		$("#event_box_list > div").hide();
+		$("#event_box_list > div").eq(idx-1).show();
+
+		img_target.html('<img src="img/event_thum'+nidx+'.jpg">');
+		img_target2.html('<img src="img/event_side_bar.png"><img src="img/event_thum'+idx+'_over.jpg">');
+		
+		nidx = idx;
+	}
+}
+
+$(function(){
+	$("#event_box_btn li").hover(function(){
+		clearTimeout(timer);
+
+		var info = parseInt($(this).attr("info"));
+
+		event_banner_move(info);
+	},function(){
+		timer = setTimeout("event_banner_auto()",timerSec);
+	});
+});
+
+$(document).ready(function(){
+	$("#event_box_list > div").eq(0).show();
+
+	timer = setTimeout("event_banner_auto()",timerSec);
+});
+</script>
+
+<div id="ft">
+	<div id="ft_catch">
+			<ul>
+				<li><img src="img/bottom_logo.png"> </li>
+			</ul>
+			<ul>
+				<div id="ft_text">
+					<ul>
+						<li><a href="">이메일</a></li>    
+						<li>|<li>
+						<li><a href="">개인정보보호정책</a></li>   
+						<li>|<li>
+						<li><a href="">이메일 무단수집거부</a></li>      
+						<li>|<li>
+						<li><a href="">관리자</a></li>  
+					</ul>
+				</div>
+				<li>법인상호 : (주)오토다이렉트카 | 주소 : 서울특별시 중구 신당동 353-24 4층 (100-450) | 대표번호 : 1644-5752</li>
+				<li>FAX : 02-3452-1070 | 대표 : 손가람 | 사업자등록번호 : 120-88-14131 | 개인정보책임관리자 : 노인수</li>
+				<li>Copyright 2013 AutoDirectCar Co.,Ltd. All Right Reserved.</li>
+			</ul>
+		
+	</div>
+</div>
+
+<!-- 퀵메뉴 -->
+<div id="cfmOllehQuickMenu" class="cfmOllehQuickMenu">
+	<div class="cfmOllehQuickMenuinner">	
+		<ul class="cfmOllehQuickBannerList">
+			<li><a href="#"><img src="img/side/side_icon1.jpg" alt="아이콘1"></a>
+			</li>
+			<li><a href="#"><img src="img/side/side_icon2.jpg" alt="아이콘2"></a>
+			</li>
+			<li><a href="#"><img src="img/side/side_icon3.jpg" alt="아이콘3"></a>
+			</li>
+			<li><a href="#"><img style="padding-top:70px" src="img/side/side_tel.jpg" alt="전화번호"></a>
+			</li>
+			
+		</ul>	
+		<div id="cfmOllehQuickCont" class="cfmOllehShowAndHideToday" style="display: block;">		
+			<ul class="cfmOllehQuickBannerList">
+				<li id="cfmOllehQuickContLi0"><img src="img/side/side_title1.jpg" alt="title1" style="padding-bottom:0px;">
+				</li>
+
+				<li id="selectcate" id="cfmOllehQuickContLi0"  >
+
+					<select id="time_01" class="time_01" name="time_01">
+					  <option value="01" selected="selected">차유형</option>
+					  <option value="02">차유형01</option>
+					  <option value="03">차유형02</option>
+					  <option value="04">차유형03</option>		
+					</select>
+
+					<input type="text" name="stx" id="sch_stx" maxlength="20" value="연락처입력">
+
+					<textarea row="5" col="25" >상담내용</textarea>
+
+				</li>
+
+				<li id="cfmOllehQuickContLi0">
+					<a href="#"><img src="img/side/side_bn1.jpg" alt="아이콘2" style="padding:10px 0 10px 0;"></a>
+				</li>
+
+				<li id="cfmOllehQuickContLi0"><img src="img/side/side_title2.jpg" alt="title2" style="padding-bottom:10px;">
+					<div id="small_icon">
+						<ul>
+							<li><a href="#"><img src="img/side/small_icon1.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon2.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon3.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon4.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon5.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon6.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon7.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon8.jpg" alt="small_icon"></a></li>
+						</ul>
+					</div>
+				</li>
+				<li id="cfmOllehQuickContLi1" style="display: block;"><a href="#"><img src="img/side/side_blog.jpg" style="padding-top:50px;" alt="블로그"></a>
+				</li>
+			
+			</ul>	
+		</div>	
+			<a href="#" class="cfmOllehQuickButton" onclick="#"><img src="img/side/side_top.jpg" alt="TOP"></a>	
+			<a href="#" class="cfmOllehQuickMenuCloseButton" onclick="return false;"><img src="img/side/side_offbn.png" alt="닫기"></a>
+	</div>
+</div>
+
+<div id="cfmOllehQuickMenuClose" class="cfmOllehQuickMenuClose">
+	<a href="#" class="cfmOllehQuickMenuCloseButton" onclick="return false;"><img src="img/side/side_onbn.png" alt="열기"></a>
+</div>
+<!-- 퀵메뉴 끝 -->
+
+<script>
+
+$(function(){
+	$("#cfmOllehQuickMenu .cfmOllehQuickMenuCloseButton").click(function(){
+		$("#cfmOllehQuickMenu").hide();
+		$("#cfmOllehQuickMenuClose").show();
+		
+	});
+
+	$("#cfmOllehQuickMenuClose .cfmOllehQuickMenuCloseButton").click(function(){
+		$("#cfmOllehQuickMenu").show();
+		$("#cfmOllehQuickMenuClose").hide();
+		
+	});
+});
+
+</script>
+
+</body>
+
+</html>
+
