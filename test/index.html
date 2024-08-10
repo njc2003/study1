@@ -1,0 +1,593 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<title>오토다이렉트카</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script language="JavaScript" type="text/javascript" src="js/jquery-1.7.2.min.js"></script>	
+	<script src="js/menu.js" type="text/javascript"></script>
+	<script language="JavaScript" type="text/javascript" src="./js/jquery.cfSlider.js"></script>
+
+	
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+	<script language="JavaScript" type="text/javascript" src="js/jquery.bxslider.js"></script>	
+</head>
+
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" onload="">
+
+
+
+<div id="hd">
+	<div id="hd_top_wrapper">
+		<div id="hd_top">
+			<ul>
+				<li><a id="top_on" href="#" >장기렌터카</a></li>
+				<li><a href="#">할부&리스</a></li>
+			</ul>
+		</div>
+		<div id="hd_content">
+			<img src="img/logo.png" style="padding:26px 0 0 0;float:left">
+			<img src="img/top_banner.png" style="padding:10px 0 0 0;float:right">
+		</div>
+		<div id="hd_nav">
+			 <nav id="gnb">  
+				<ul id="gnb_1dul">					
+					<li class="gnb_1dli" >
+						<a href="#" class="gnb_1da" target="" style="width:108px;">장기렌터카</a>						  
+					</li>
+
+					<li class="gnb_1dli" >
+						<a href="#" class="gnb_1da" target="" style="width:146px;">장기렌터카VS리스</a>						  
+					</li>
+
+					<li class="gnb_1dli" >
+						<a href="#" class="gnb_1da" target="" style="width:121px;">브랜드스토리</a>						  
+					</li>
+
+					<li class="gnb_1dli">
+						<a href="#" class="gnb_1da" target="" style="width:132px;">표준차량단가표</a>						  
+					</li>
+
+					<li class="gnb_1dli">
+						<a href="#" class="gnb_1da_nh"  style="color:red;width:140px;"><img src="img/icon1.png"> 이번달e가격</a>						  
+					</li>
+
+					<li class="gnb_1dli">
+						<a href="#" class="gnb_1da_nh" target="" style="width:136px;"><img src="img/icon2.png"> 게릴라특가</a>						  
+					</li>
+
+					<li class="gnb_1dli">
+						<a href="#" class="gnb_1da" target="" style="width:94px;">커뮤니티</a>						  
+					</li>
+
+					<li class="gnb_1dli">
+						<a href="#" class="gnb_1da_nh" target="" style="color:white;width:98px;"><img src="img/icon4.png"> 견적문의</a>						  
+					</li>
+				</ul>
+				<div class="top_menu">							
+					<ul style="width:110px">
+						<li><a href="#">장기렌터카란?</a></li>
+						<li><a href="#">이용절차</a></li>
+						<li><a href="#">장기렌터카 장점</a></li>									
+					</ul>
+					<ul style="width:147px">
+						<li><a href="#">장기렌터카 Tip</a></li>
+						<li><a href="#">장기렌터카 문의하기</a></li>		
+					</ul>
+					<ul style="width:121px">
+						<li><a href="#">KT금호렌터카</a></li>
+						<li style="width:121px"><a href="#">레드캡</a></li>
+						<li style="width:121px"><a href="#">AJ</a></li>					
+					</ul>
+					<ul style="width:135px">
+						<li style="width:135px"><a href="#">국산차</a></li>
+						<li><a href="#">수입차</a></li>				
+					</ul>
+					<ul style="width:141px">
+						<li style="width:141px"><a href="#">이번달 특가</a></li>
+						<li style="width:141px"><a href="#">홈쇼핑 특가</a></li>										
+					</ul>
+					<ul style="width:120px">
+						<li><a href="#">한정 특가상품</a></li>				
+					</ul>
+					<ul style="width:95px">
+						<li style="width:95px"><a href="#">공지사항</a></li>
+						<li style="width:95px"><a href="#">FAQ</a></li>
+						<li style="width:95px"><a href="#">차량 이용후기</a></li>
+						<li style="width:95px"><a href="#">블랙박스 영상</a></li>					
+					</ul>
+					<ul style="width:80px">
+						<li><a href="#" style="letter-spacing:-0.1em">문의요(신차구매)</a></li>
+						<li><a href="#">찾아요(승계)</a></li>
+						<li><a href="#">팔아요(중고)</a></li>
+						<li><a href="#">자동차보험</a></li>		
+						<li><a href="#">딜러문의</a></li>		
+					</ul>
+					<div id="top_menu_arrow"><img src="img/top_menu_arrow.png"></div>
+				</div>
+
+			</nav>
+		</div>
+	</div>
+</div>
+
+
+<div id="wrapper">
+	<div id="wrapper_wrap">
+		<div id="main_center_wrap">
+			<div id="icon_special">
+				<img src="img/icon_special.png">
+			</div>
+
+			<div class="main_center_box">
+				<div class="main_center_slider">
+					<ul class="container">
+						<li class="item">
+							<div>
+								<ul>
+									<li style="border:1px solid #cccccc"><img src="img/sample5.jpg"></li>
+									<li class="main_center_right">
+										<span class="main_center_text">[현대]</br>싼타페</span>
+										<span class="main_center_text2">월 : 0,000,000원</span>
+										<span class="main_center_text3">월 : 0,000,000원</span>
+									</li>
+								</ul>		
+							</div>
+							<div>
+								<ul>
+									<li style="border:1px solid #cccccc"><img src="img/sample5.jpg"></li>
+									<li class="main_center_right">
+										<span class="main_center_text">[현대]</br>싼타페</span>
+										<span class="main_center_text2">월 : 0,000,000원</span>
+										<span class="main_center_text3">월 : 0,000,000원</span>
+									</li>
+								</ul>		
+							</div>
+							<div>
+								<ul>
+									<li style="border:1px solid #cccccc"><img src="img/sample5.jpg"></li>
+									<li class="main_center_right">
+										<span class="main_center_text">[현대]</br>싼타페</span>
+										<span class="main_center_text2">월 : 0,000,000원</span>
+										<span class="main_center_text3">월 : 0,000,000원</span>
+									</li>
+								</ul>		
+							</div>
+						</li>
+						<li class="item">
+							<div>
+								<ul>
+									<li style="border:1px solid #cccccc"><img src="img/sample5.jpg"></li>
+									<li class="main_center_right">
+										<span class="main_center_text">[현대]</br>싼타페</span>
+										<span class="main_center_text2">월 : 0,000,000원</span>
+										<span class="main_center_text3">월 : 0,000,000원</span>
+									</li>
+								</ul>		
+							</div>
+							<div>
+								<ul>
+									<li style="border:1px solid #cccccc"><img src="img/sample5.jpg"></li>
+									<li class="main_center_right">
+										<span class="main_center_text">[현대]</br>싼타페</span>
+										<span class="main_center_text2">월 : 0,000,000원</span>
+										<span class="main_center_text3">월 : 0,000,000원</span>
+									</li>
+								</ul>		
+							</div>
+							<div>
+								<ul>
+									<li style="border:1px solid #cccccc"><img src="img/sample5.jpg"></li>
+									<li class="main_center_right">
+										<span class="main_center_text">[현대]</br>싼타페</span>
+										<span class="main_center_text2">월 : 0,000,000원</span>
+										<span class="main_center_text3">월 : 0,000,000원</span>
+									</li>
+								</ul>		
+							</div>						
+						</li>
+						<li class="item">
+							<div>
+								<ul>
+									<li style="border:1px solid #cccccc"><img src="img/sample5.jpg"></li>
+									<li class="main_center_right">
+										<span class="main_center_text">[현대]</br>싼타페</span>
+										<span class="main_center_text2">월 : 0,000,000원</span>
+										<span class="main_center_text3">월 : 0,000,000원</span>
+									</li>
+								</ul>		
+							</div>
+							<div>
+								<ul>
+									<li style="border:1px solid #cccccc"><img src="img/sample5.jpg"></li>
+									<li class="main_center_right">
+										<span class="main_center_text">[현대]</br>싼타페</span>
+										<span class="main_center_text2">월 : 0,000,000원</span>
+										<span class="main_center_text3">월 : 0,000,000원</span>
+									</li>
+								</ul>		
+							</div>
+							<div>
+								<ul>
+									<li style="border:1px solid #cccccc"><img src="img/sample5.jpg"></li>
+									<li class="main_center_right">
+										<span class="main_center_text">[현대]</br>싼타페</span>
+										<span class="main_center_text2">월 : 0,000,000원</span>
+										<span class="main_center_text3">월 : 0,000,000원</span>
+									</li>
+								</ul>		
+							</div>					
+						</li>
+					</ul>
+				</div>
+				<div id="up_arrow"><img src="img/up_arrow.png"></div>
+				<div id="down_arrow"><img src="img/down_arrow.png"></div>
+			</div>
+		</div>
+
+		<div id="main_center_top">
+
+			<div class="main_center_top_left">
+				<ul>
+					<li class="main_roll_bigimg">		
+						<ul class="bxslider">
+						  <li><img src="img/main_roll1.jpg"></li>
+						  <li><img src="img/main_roll1.jpg"></li>
+						  <li><img src="img/main_roll1.jpg"></li>
+						  <li><img src="img/main_roll1.jpg"></li>
+						</ul>
+						
+					</li>
+					<li class="main_roll_thum">						
+						<ul id="bx-pager">
+							<li><a href="" data-slide-index="0"><img src="img/main_center_thum1.jpg"><div class="roll_on"><img src="img/main_roll_bg.png"></div></a></li>
+							<li><a href="" data-slide-index="1"><img src="img/main_center_thum2.jpg"><div class="roll_on"><img src="img/main_roll_bg.png"></div></a></li>
+							<li><a href="" data-slide-index="2"><img src="img/main_center_thum3.jpg"><div class="roll_on"><img src="img/main_roll_bg.png"></div></a></li>
+							<li><a href="" data-slide-index="3"><img src="img/main_center_thum4.jpg"><div class="roll_on"><img src="img/main_roll_bg.png"></div></a></li>
+						</ul>						
+					<li>
+
+			</div>
+
+			<div class="main_center_top_right">
+				<ul>
+					<li>
+						<img src="img/main_center_top_title1.png">
+						<div>
+							<select id="time_01" class="time_02" name="time_02">
+							  <option value="01" selected="selected">등급선택1</option>
+							  <option value="02">등급선택2</option>
+							  <option value="03">등급선택3</option>
+							  <option value="04">등급선택4</option>
+							</select>
+							<div class="empty_height"></div>
+							<input type="text" name="stx" id="sch_stx" maxlength="20" value="이름">
+							<div class="empty_height"></div>
+							<select id="time_01" class="time_02" name="time_02" style="width:72px">
+							  <option value="01" selected="selected">010</option>
+							  <option value="02">016</option>
+							  <option value="03">011</option>
+							  <option value="04">018</option>
+							</select>
+							<input style="width:78px" type="text" name="stx" id="sch_stx" maxlength="4" value=""> <input style="width:78px" type="text" name="stx" id="sch_stx" maxlength="4" value="">
+							<div class="empty_height"></div>
+							<select id="time_01" class="time_02" name="time_02">
+							  <option value="01" selected="selected">콜예약시간</option>
+							  <option value="02">콜예약시간</option>
+							  <option value="03">콜예약시간</option>
+							  <option value="04">콜예약시간</option>
+							</select>
+						</div>
+						<input class="border_no" type="image" src="img/btn_call.png" style="width:236px;padding:12px 0 0 0"></input>
+					</li>
+
+					<li>
+						<div class="main_center_top_rightbox">
+							<p style="width:245px;text-align:right;display:inline-block;color:#000000;">Total/건</p></br>
+							<img src="img/main_center_top_title2.png" style="padding-right:5px">
+							<span>1</span><span>1</span><span>1</span><span>1</span><span>1</span><span>1</span>
+							<table class="main_center_top_right_table">
+						
+								<tbody>							
+									<tr>
+										<td class="td_num">[15.06.07]</td>									
+										<td class="td_name">김**</td>									
+										<td class="td_exp">아우디 A4</td>
+										<td class="td_img"><img src="img/main_center_top_img2.png"></td>												
+									</tr>
+
+									<tr>
+										<td class="td_num">[15.06.07]</td>									
+										<td class="td_name">김**</td>									
+										<td class="td_exp">아우디 A4</td>
+										<td class="td_img"><img src="img/main_center_top_img2.png"></td>												
+									</tr>
+
+									<tr>
+										<td class="td_num">[15.06.07]</td>									
+										<td class="td_name">김**</td>									
+										<td class="td_exp">아우디 A4</td>
+										<td class="td_img"><img src="img/main_center_top_img2.png"></td>												
+									</tr>
+
+									<tr>
+										<td class="td_num">[15.06.07]</td>									
+										<td class="td_name">김**</td>									
+										<td class="td_exp">아우디 A4</td>
+										<td class="td_img"><img src="img/main_center_top_img2.png"></td>												
+									</tr>
+								
+								</tbody>
+
+						</table>
+
+						</div>
+						<img src="img/main_center_top_img1.png">
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div id="main_center1_wrap">		
+			<a href=""><img src="img/main_center_banner1.jpg"></a>
+			<a href=""><img src="img/main_center_banner2.jpg"></a>
+		</div>
+
+		<div id="main_center1_wrap">		
+			<a href=""><img src="img/main_center_banner.png"></a>
+		</div>
+
+		<div id="main_center2_wrap">		
+			<ul>
+				<li><a href=""><img src="img/main_bottom_banner1.png"></a></li>
+				<li><a href=""><img src="img/main_bottom_banner2.png"></a></li>
+				<li><a href=""><img src="img/main_bottom_banner3.png"></a></li>
+				<li><a href=""><img src="img/main_bottom_banner4.png"></a></li>
+			
+			</ul>
+		</div>
+
+		<div id="main_center3_wrap">
+			<div class="main_center3_slider">
+				<ul class="container">
+					<li class="item">
+						<ul>
+							<li><img src="img/brand1.jpg"></li>
+							<li><img src="img/brand2.jpg"></li>
+							<li><img src="img/brand3.jpg"></li>
+							<li><img src="img/brand4.jpg"></li>
+							<li><img src="img/brand5.jpg"></li>
+						</ul>				
+					</li>
+
+					<li class="item">
+						<ul>
+							<li><img src="img/brand1.jpg"></li>
+							<li><img src="img/brand2.jpg"></li>
+							<li><img src="img/brand3.jpg"></li>
+							<li><img src="img/brand4.jpg"></li>
+							<li><img src="img/brand5.jpg"></li>
+						</ul>				
+					</li>
+
+					<li class="item">
+						<ul>
+							<li><img src="img/brand1.jpg"></li>
+							<li><img src="img/brand2.jpg"></li>
+							<li><img src="img/brand3.jpg"></li>
+							<li><img src="img/brand4.jpg"></li>
+							<li><img src="img/brand5.jpg"></li>
+						</ul>				
+					</li>
+				</ul>				
+			</div>
+			<div id="brand_up_arrow"><img src="img/brand_up_arrow.png"></div>
+			<div id="brand_down_arrow"><img src="img/brand_down_arrow.png"></div>
+		</div>
+		
+		<div id="main_center4_wrap">
+			<ul>
+				<li style="padding-right:12px;">
+					<div id="" style="position:absolute;bodrer:1px solid red;width:434px;height:265px;top:42px;left:23px">
+						<iframe width="434" height="265" src="https://www.youtube.com/embed/6Viyt2aIOG8?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<img src="img/monitor.png">
+				</li>
+
+				<li class="main_center4_right">
+					<div id="main_center4_right_text">
+						차량구입의 모든것, <font style="color:#be0e15">‘카앤썰’</font> <font style="font-weight:normal;font-size:11px;color:#6a5c4d">| 오토DC가 들려주는 렌터가 이야기!</font>
+						<b style="display:inline-block;text-align:right;font-weight:normal;width:120px"> <a href="#">더보기 +</a></b>
+					</div>
+					<ul>
+						<li>
+							<ul class="main_video">
+								<li class="main_video_left" style=""><img src="img/main_video_thum1.jpg"></li>
+								<li class="main_video_right" style="">
+									[카앤썰 6회]</br>장기렌터카의 모든것/ 장기렌 카 VS 리스 올바른 선택은?</br>
+									<span><img src="img/main_video_hit.png"> <b>1,000,000</b></span>
+									<span class="main_video_right_bottom_text">렌터카 전문가ㅣ박준영ㅣ</span>
+								</li>
+							</ul>							
+						</li>
+
+						<li>
+							<ul class="main_video">
+								<li class="main_video_left" style=""><img src="img/main_video_thum1.jpg"></li>
+								<li class="main_video_right" style="">
+									[카앤썰 6회]</br>장기렌터카의 모든것/ 장기렌 카 VS 리스 올바른 선택은?</br>
+									<span><img src="img/main_video_hit.png"> <b>1,000,000</b></span>
+									<span class="main_video_right_bottom_text">렌터카 전문가ㅣ박준영ㅣ</span>
+								</li>
+							</ul>							
+						</li>
+
+						<li>
+							<ul class="main_video">
+								<li class="main_video_left" style=""><img src="img/main_video_thum1.jpg"></li>
+								<li class="main_video_right" style="">
+									[카앤썰 6회]</br>장기렌터카의 모든것/ 장기렌 카 VS 리스 올바른 선택은?</br>
+									<span><img src="img/main_video_hit.png"> <b>1,000,000</b></span>
+									<span class="main_video_right_bottom_text">렌터카 전문가ㅣ박준영ㅣ</span>
+								</li>
+							</ul>							
+						</li>
+
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+
+<div id="ft">
+	<div id="ft_catch">
+			<ul>
+				<li><img src="img/bottom_logo.png"> </li>
+			</ul>
+			<ul>
+				<div id="ft_text">
+					<ul>
+						<li><a href="">이메일</a></li>    
+						<li>|<li>
+						<li><a href="">개인정보보호정책</a></li>   
+						<li>|<li>
+						<li><a href="">이메일 무단수집거부</a></li>      
+						<li>|<li>
+						<li><a href="">관리자</a></li>  
+					</ul>
+				</div>
+				<li>법인상호 : (주)오토다이렉트카 | 주소 : 서울특별시 중구 신당동 353-24 4층 (100-450) | 대표번호 : 1644-5752</li>
+				<li>FAX : 02-3452-1070 | 대표 : 손가람 | 사업자등록번호 : 120-88-14131 | 개인정보책임관리자 : 노인수</li>
+				<li>Copyright 2013 AutoDirectCar Co.,Ltd. All Right Reserved.</li>
+			</ul>
+		
+	</div>
+</div>
+
+<!-- 퀵메뉴 -->
+<div id="cfmOllehQuickMenu" class="cfmOllehQuickMenu">
+	<div class="cfmOllehQuickMenuinner">	
+		<ul class="cfmOllehQuickBannerList">
+			<li><a href="#"><img src="img/side/side_icon1.jpg" alt="아이콘1"></a>
+			</li>
+			<li><a href="#"><img src="img/side/side_icon2.jpg" alt="아이콘2"></a>
+			</li>
+			<li><a href="#"><img src="img/side/side_icon3.jpg" alt="아이콘3"></a>
+			</li>
+			<li><a href="#"><img style="padding-top:70px" src="img/side/side_tel.jpg" alt="전화번호"></a>
+			</li>
+			
+		</ul>	
+		<div id="cfmOllehQuickCont" class="cfmOllehShowAndHideToday" style="display: block;">		
+			<ul class="cfmOllehQuickBannerList">
+				<li id="cfmOllehQuickContLi0"><img src="img/side/side_title1.jpg" alt="title1" style="padding-bottom:0px;">
+				</li>
+
+				<li id="selectcate" id="cfmOllehQuickContLi0"  >
+
+					<select id="time_01" class="time_01" name="time_01">
+					  <option value="01" selected="selected">차유형</option>
+					  <option value="02">차유형01</option>
+					  <option value="03">차유형02</option>
+					  <option value="04">차유형03</option>		
+					</select>
+
+					<input type="text" name="stx" id="sch_stx" maxlength="20" value="연락처입력">
+
+					<textarea row="5" col="25" >상담내용</textarea>
+
+				</li>
+
+				<li id="cfmOllehQuickContLi0">
+					<a href="#"><img src="img/side/side_bn1.jpg" alt="아이콘2" style="padding:10px 0 10px 0;"></a>
+				</li>
+
+				<li id="cfmOllehQuickContLi0"><img src="img/side/side_title2.jpg" alt="title2" style="padding-bottom:10px;">
+					<div id="small_icon">
+						<ul>
+							<li><a href="#"><img src="img/side/small_icon1.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon2.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon3.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon4.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon5.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon6.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon7.jpg" alt="small_icon"></a></li>
+							<li><a href="#"><img src="img/side/small_icon8.jpg" alt="small_icon"></a></li>
+						</ul>
+					</div>
+				</li>
+				<li id="cfmOllehQuickContLi1" style="display: block;"><a href="#"><img src="img/side/side_blog.jpg" style="padding-top:50px;" alt="블로그"></a>
+				</li>
+			
+			</ul>	
+		</div>	
+			<a href="#" class="cfmOllehQuickButton" onclick="#"><img src="img/side/side_top.jpg" alt="TOP"></a>	
+			<a href="#" class="cfmOllehQuickMenuCloseButton" onclick="return false;"><img src="img/side/side_offbn.png" alt="닫기"></a>
+	</div>
+</div>
+
+<div id="cfmOllehQuickMenuClose" class="cfmOllehQuickMenuClose">
+	<a href="#" class="cfmOllehQuickMenuCloseButton" onclick="return false;"><img src="img/side/side_onbn.png" alt="열기"></a>
+</div>
+<!-- 퀵메뉴 끝 -->
+
+<script>
+
+$(function(){
+	$("#cfmOllehQuickMenu .cfmOllehQuickMenuCloseButton").click(function(){
+		$("#cfmOllehQuickMenu").hide();
+		$("#cfmOllehQuickMenuClose").show();
+		
+	});
+
+	$("#cfmOllehQuickMenuClose .cfmOllehQuickMenuCloseButton").click(function(){
+		$("#cfmOllehQuickMenu").show();
+		$("#cfmOllehQuickMenuClose").hide();
+		
+	});
+});
+
+</script>
+
+</body>
+
+</html>
+
+
+
+<script>
+$(document).ready(function(){
+	$('.main_center_slider').cfSlider({
+		direction: 'vertical',
+		prevBtn: '#up_arrow',
+		nextBtn: '#down_arrow'
+	});
+
+	$('.main_center3_slider').cfSlider({
+		direction: 'vertical',
+		prevBtn: '#brand_up_arrow',
+		nextBtn: '#brand_down_arrow'
+	});
+
+	$('.bxslider').bxSlider({
+	  auto: true,
+	  autoControls: true,
+	  pagerCustom: '#bx-pager'
+	});
+});
+</script>
+
+
+
